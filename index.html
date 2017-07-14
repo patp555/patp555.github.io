@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml" xmlns:fb="https://www.facebook.com/2008/fbml">
+    <head>        
+    <style type="text/css">
+ 
+body,td,th {
+    color: #000;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+}
+    .tadaa {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 24px;
+        color: #09F;
+}
+    </style>
+                <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"></script>
+        <script type="text/javascript" src="https://connect.facebook.net/en_US/all.js"></script>
+    <meta charset="utf-8">
+        </head>
+
+    
+
+<div align="center">
+<p>
+</center>
+<a href="https://apps.facebook.com/thebros_team" target="_blank"><img src="https://image.prntscr.com/image/i47MXRTQSeaGv-Kz-OXTyA.png"><a>
+</center>
+<div class="fb-like" data-href="https://www.facebook.com/thebros3/" data-layout="standard" data-action="like" data-show-faces="false"></div>
+</center>
+<br>
+<style>
+body{
+
+    background-image: url("1");
+   
+}
+ </style>
+<!--<style>
+ <div align="right"></div>
+<p>
+</style>--!>
+<body>
+<div id="fb-root" align="center">
+<div align = "center">
+  <div align = "center">
+  <center>
+          <div id="myFbId"></div>
+    </center>
+    <center><script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+   
+    <center><div align="center"><script>
+    FB.login(function(response) {
+   // handle the response
+ }, {scope: 'email,user_likes'});
+ 
+ 
+  function onLogin(response) {
+  if (response.status == 'connected') {
+    FB.api('/me?fields=first_name', function(data) {
+    var welcomeBlock = document.getElementById('flashContent');
+          // Logged into your app and Facebook.
+      testAPI(response.authResponse.accessToken);
+    });
+  }
+}
+  
+   function checkLoginState() {
+    FB.getLoginStatus(function(response) {
+     onLogin(response);
+    });
+  }
+  window.fbAsyncInit = function() {
+  FB.init({
+    appId      : '131773727389845',
+    cookie     : true,  // enable cookies to allow the server to access
+                        // the session
+    xfbml      : true,  // parse social plugins on this page
+    version    : 'v2.2' // use version 2.0
+  });
+
+
+ FB.getLoginStatus(function(response) {
+  // Check login status on load, and if the user is
+  // already logged in, go directly to the welcome message.
+  // ayyyyy tst 1
+  if (response.status == 'connected') {
+    onLogin(response);
+  } else {
+    // Otherwise, show Login dialog first.
+    FB.login(function(response) {
+      onLogin(response);
+    }, {scope: 'public_profile,user_friends,email'});
+  }
+});
+  };
+ 
+  // Load the SDK asynchronously
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+ 
+  // Here we run a very simple test of the Graph API after login is
+  // successful.  See statusChangeCallback() for when this call is made.
+  //suck mah dick tst 2
+  function testAPI(test) {
+ 
+    FB.api('/me', function(response) {
+
+       console.log('Successful login for: ' + response.name + "[" + response.id + "]");
+       var welcomeBlock = document.getElementById('fb-welcome1');
+       fbuid: response.id
+       var numbera = response.id * 8 / 2 + 2
+                var flashvars = {
+       fbname: response.name,
+       http_user_host: "",
+                fbuid: "",
+        browserURL: window.location.href,
+        access_token: ""
+      };
+      
+     
+      var params = {};
+      params.allowfullscreen = "true";
+      params.wmode = "opaque";
+      params.allowscriptaccess = "always";
+      params.allownetworking = "always";
+      params.allowFullScreenInteractive = "true";
+     
+     
+      var attributes = {};
+   
+    var attributes =
+    {
+        };
+    
+    flashvars['fbname'] = response.name
+      flashvars['fb_user_id'] = response.id,
+      flashvars['browserURL'] = window.location.href,
+      flashvars['fb_access_token'] = test,
+      flashvars['authkey'] = response.id * 8 / 2 + 2,
+                swfobject.switchOffAutoHideShow();
+    swfobject.embedSWF("https://r.playerio.com/r/fly-or-die-3zsmlhfzr0plqsyyloiqg/swf/otr.swf", "flashContent", "700", "500", "9.0", attributes, flashvars, params, {});
+    });
+    document.getElementById("myFbId").innerHTML = '<font color="#999999">Your Id: </font><font color="#333333">' + flashvars['fb_user_id'] + '</font>';
+ 
+  }
+
+    </script>
+  </div>
+<style type="text/css">
+@font-face {
+    font-family: Aller;
+    src: url(ALLER_RG.TTF);
+}
+body{
+	font-family: Aller;
+}
+.uidinfo{
+	font-size: 8pt;
+	color: #cecece;
+}
+</style>
+</div>
+<div align="center">
+    </script>
+</div>
+                <div id="flashContent" align="center">
+
+</div>  
+</div>
+<center>
+<div id="footer">
+      <div>
+        <!-- <a target="pio" href="https://playerio.com/documentation/">Documentation</a> | -->
+        <!-- <a target="pio" href="https://playerio.com/forum/">Forum</a> | -->
+        <!-- <a target="pio" href="https://playerio.com/download/">Download</a> -->
+        <!--  
+ -->
+<br>
+<br>
+<!-- Fuck u Nabs Tired Of Making Shits :v --!>
+         *Play TheBros-3 And Have Fun!!!*</font>
+          <br>
+         *TheBros3-Team*</font>  
+         <font color="#999999">#brofist</font>         
+    </div>
+    </center>
+</center>
+</div>
+</center>
+<p>Big Thanks To <strong>Patrick Pooptke</strong> For The Help To <strong>TheBros-3</strong></p>
+</div>
+</center>
+
+</div>  
+</div>
+<center>
+<br>
+<a href="https://www.facebook.com/groups/1703313449696371/" target="_blank"><img src="http://transformyourbrilliance.com/wp-content/uploads/icon-facebook-group-2-150x150.png"></img></a>
+<center>
+<font size="40">*<a href="https://apps.facebook.com/newchattie/" target="_blank">Chattie!</a>*</font>
+<center>
+</div>
+</br>
+<div align = center>
+<br>
+<br>
+<br>
+<br>
+</div>
+	
+<div align = center>        
+ <div id ="fb-welcome1"></div>
+</div>
+</body>
+</html>
